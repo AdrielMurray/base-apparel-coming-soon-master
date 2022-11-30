@@ -76,15 +76,14 @@ span {
     width: 60vh;
 }
 
-input {
+
+.error-state {
+
  
-    height: 5vh;
-    width: 40vh;
-    border-radius: 25px;
-    border: 1px solid lightgray;
-    padding: 20px;
-    background-color: transparent;
+border: 2px solid hsl(0, 93%, 68%);
+
 }
+
 
 ::placeholder {
 
@@ -118,15 +117,37 @@ input {
     background-image: linear-gradient( 135deg, hsl(0, 80%, 65%), hsl(0, 74%, 66%) );
 }
 
-.icon-error  {
 
-    display: block;
+input {
+ 
+    height: 5vh;
+    width: 40vh;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    background-color: transparent;
+    
+}
+
+.error-state {
+
+ 
+    border: 2px solid hsl(0, 93%, 68%);
+    
+
+    }
+
+
+.icon-error {
+
+    
 
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: -35px;
-
+    display: none;
+    
     /*
     position: absolute;
     bottom: 115px;
@@ -135,18 +156,23 @@ input {
 
 }
 
-.valid-error  {
+
+
+.valid-error {
   
     font-family: 'Josefin Sans', sans-serif;
     font-size: 10px;
     color: hsl(0, 93%, 68%);
-
+    margin-top: 20px;
+    margin-left: 20px;
+    display: none;
     /*
     position: absolute;
     bottom: 90px;
     right: 925px;
     */
 }
+
 
 
 
